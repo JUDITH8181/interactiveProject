@@ -1,22 +1,54 @@
 /*
 	get the answer to the first question
 */
-
+document.getElementById('qOne').style.display = "block";
+document.getElementById('qTwo').style.display = "none";
+document.getElementById('qThree').style.display = "none";
+document.getElementById('qFour').style.display = "none";
+document.getElementById('qFive').style.display = "none";
+document.getElementById('qSix').style.display = "none";
+document.getElementById('fullImage').style.display="none";
 // get the user submit button
 const q1Btn = document.getElementById('qOneBtn');
 
 // when the user clicks, read their answer
 q1Btn.onclick = function() {
 	const answer = document.getElementById('bp').value;
-	// yes open question 2
-	// no open question 3
-	if (answer == "Yes") {
+	const message = document.createElement('p');
+	document.body.appendChild(message);
+
+	if (answer == "God's plan by Drake") {
+		message.textContent = "Correct!";
+		document.getElementById('qOne').style.display = "none";
 		document.getElementById('qTwo').style.display = "block";
+		document.getElementById('fullImage').style.display="block";
+		document.getElementById('row1col1').style.display="block";
 	} else {
-		document.getElementById('qThree').style.display = "block";
+		message.textContent = "Wrong!";	
+
 	}
-	document.getElementById('qOne').style.display = "none";
+
+
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 	question 2
