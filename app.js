@@ -19,64 +19,26 @@ var y = "Correct!";
 /*Question 1*/
 
 const q1Btn = document.getElementById('qOneBtn');
-<<<<<<< HEAD
 q1Btn.onclick = function()
  {
-=======
-<<<<<<< HEAD
-q1Btn.onclick = function() {
-=======
-q1Btn.onclick = function()
- {
->>>>>>> 8117273e554720c35299196a4270fec3e30e9b14
->>>>>>> f929337e1bd0d7d136f50581c1af20a300f2f431
 	const answer = document.getElementById('lyric1').value;
 	const message = document.createElement('p');
 	document.body.appendChild(message);
 
-<<<<<<< HEAD
 	if (answer == "God's plan by Drake")
 	{
-=======
-<<<<<<< HEAD
-	if (answer == "God's plan by Drake") {
-=======
-	if (answer == "God's plan by Drake")
-	{
->>>>>>> 8117273e554720c35299196a4270fec3e30e9b14
->>>>>>> f929337e1bd0d7d136f50581c1af20a300f2f431
 		message.textContent = y ;
 		document.getElementById('qOne').style.display = "none";
 		document.getElementById('row1col1').style.display = "block";
 		document.getElementById('qTwo').style.display = "block";
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-	} else {
-		message.textContent = x;
-	}
-=======
->>>>>>> f929337e1bd0d7d136f50581c1af20a300f2f431
 	} else 
 	 {
 	 	message.textContent=x;
 	 	}	
-<<<<<<< HEAD
-=======
->>>>>>> 8117273e554720c35299196a4270fec3e30e9b14
->>>>>>> f929337e1bd0d7d136f50581c1af20a300f2f431
 };
 
 /*Question 2*/ 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-/*Question 2*/ 
-
-=======
->>>>>>> 8117273e554720c35299196a4270fec3e30e9b14
->>>>>>> f929337e1bd0d7d136f50581c1af20a300f2f431
 const q2Btn = document.getElementById('qTwoBtn');
 q2Btn.onclick = function() {
 	const answer = document.getElementById('lyric2').value;
